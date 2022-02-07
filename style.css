@@ -1,5 +1,5 @@
 body {
-  margin: 3rem;
+  margin: 0rem;
   padding: 0;
   width: 100%;
   height: 100%;
@@ -33,15 +33,13 @@ body {
 
 .home {
   margin-top: 2rem;
-  /* width: 75rem; */
   height: 35rem;
-  /* border: solid black; */
 }
 .home-photo {
   margin-top: 2rem;
   height: 30rem;
   width: 45%;
-  /* border: solid black; */
+
   float: left;
 }
 .image {
@@ -51,7 +49,7 @@ body {
 .home-detail {
   margin-top: 2rem;
   width: 45%;
-  /* border: solid black; */
+
   float: right;
 }
 .home-detail h2 {
@@ -72,12 +70,10 @@ body {
 }
 h2 {
   text-align: center;
-  /* margin-top: 5rem; */
+  color: rgba(15, 25, 111, 1);
   font-size: 40px;
 }
-/* h2 {
-  margin-top: 2rem;
-} */
+
 .about-details {
   width: 40%;
   font-size: 24;
@@ -88,4 +84,66 @@ h2 {
   width: 50%;
   height: 30rem;
   margin-right: 15px;
+}
+
+/* ............................................................. */
+
+.blog {
+  margin: 3rem;
+  text-align: center;
+  height: 45rem;
+  background-color: rgb(246, 248, 253);
+}
+.card {
+  width: 280px;
+  margin: 10px;
+  float: left;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/* .container {
+ 
+  
+} */
+.card-img {
+  width: 100%;
+  height: 300px;
+}
+.card button {
+  border: none;
+  margin-left: 8rem;
+  color: white;
+  height: 2rem;
+  width: 6rem;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: rgba(15, 25, 111, 1);
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+/* ........................................................ */
+
+.celtificate {
+  text-align: center;
+}
+.celtificate div {
+  margin: 3rem;
+  display: inline;
+}
+.celtificate div img {
+  height: 3rem;
+  width: 9rem;
+}
+/* ........................................... */
+.footer {
+  background-color: rgb(218, 218, 218);
+  color: rgba(15, 25, 111, 1);
+}
+.footer-detail {
+  margin-right: -3rem;
+}
+.footer div {
+  display: inline;
+  margin: 4rem;
 }
