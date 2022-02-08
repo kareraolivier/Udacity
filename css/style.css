@@ -24,6 +24,14 @@ body {
   font-family: sans-serif;
   font-weight: bold;
 }
+.menu a {
+  text-emphasis: none;
+  text-decoration: none;
+}
+menu a:active {
+  text-decoration: underline;
+}
+
 .menu.code {
   border: solid 0f196f;
   height: 2.5rem;

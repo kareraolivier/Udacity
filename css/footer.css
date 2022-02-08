@@ -76,6 +76,7 @@
 }
 .subscribe {
   margin-left: 10px;
+  margin: 5px;
 }
 .subscribe input {
   border: none;
