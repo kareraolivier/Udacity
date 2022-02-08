@@ -4,6 +4,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 * {
@@ -12,6 +13,8 @@ body {
 .header {
   height: 5rem;
   margin-top: 2rem;
+  position: relative;
+  /* border: yellow solid; */
 }
 .menu {
   float: left;
@@ -88,7 +91,7 @@ input[type="search"]:focus {
   outline: none;
 }
 
-/* ........................................... */
+/* ................home........................... */
 
 .home {
   height: 40rem;
@@ -106,12 +109,12 @@ input[type="search"]:focus {
 .image {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 .home-detail {
   margin-top: 5rem;
   margin-right: 3.4rem;
   width: 45%;
-  /* border: solid black; */
   float: right;
 }
 .home-detail h2 {
@@ -121,13 +124,19 @@ input[type="search"]:focus {
   margin-top: 3rem;
   color: white;
   width: 30rem;
-  font-size: 24;
+  font-size: 20;
 }
+
+/* ..................about......................... */
+
 .about {
-  margin: 3rem;
-  margin-top: 2rem;
-  height: 35rem;
-  background-color: rgba(15, 25, 111, 1);
+  background-color: rgb(239, 240, 253);
+  background-size: cover;
+  height: 45rem;
+}
+
+.about-container {
+  margin: 5rem;
   color: aliceblue;
 }
 h2 {
@@ -138,23 +147,60 @@ h2 {
 
 .about-details {
   width: 40%;
-  font-size: 24;
+  font-size: 20;
   float: left;
+  color: rgba(15, 25, 111, 1);
+  text-align: center;
+  margin-top: 5rem;
 }
 .about-image {
   float: right;
   width: 50%;
   height: 30rem;
   margin-right: 15px;
+  border-radius: 20px;
+  margin-top: 5rem;
+  position: relative;
 }
 
 /* ............................................................. */
 
+/* ..........................myproject............................. */
+
+.project {
+  background-color: rgba(15, 25, 111, 1);
+  background-size: cover;
+  color: white;
+  margin-top: -5rem;
+}
+.project-card {
+  margin: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .project-card div {
+  display: inline;
+} */
+.project h2 {
+  color: white;
+}
+.project-details {
+  float: right;
+  width: 50%;
+}
+.project-details ul li {
+  display: block;
+}
+
+.project-image {
+  width: 41%;
+  height: 25rem;
+}
+/* .......................blog.............................. */
 .blog {
   margin: 3rem;
   text-align: center;
-  /* height: 45rem;
-  background-color: rgb(246, 248, 253); */
+  font-size: 20;
 }
 .card {
   width: 280px;
@@ -164,10 +210,10 @@ h2 {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
-/* .container {
- 
-  
-} */
+.card p {
+  margin: 1px;
+  margin-bottom: 5px;
+}
 .card-img {
   width: 100%;
   height: 300px;
@@ -198,14 +244,3 @@ h2 {
   width: 9rem;
 }
 /* ........................................... */
-.footer {
-  background-color: rgb(218, 218, 218);
-  color: rgba(15, 25, 111, 1);
-}
-.footer-detail {
-  margin-right: -3rem;
-}
-.footer div {
-  display: inline;
-  margin: 4rem;
-}

@@ -3,7 +3,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/progess.css">
+    <link rel="stylesheet" href="css/footer.css">
+
 
     <!-- <link rel="stylesheet" href="fonts/Roboto-Thin.ttf" />
     <link rel="stylesheet" href="/fonts/Roboto-Bold.ttf" /> -->
@@ -46,10 +49,11 @@
     </div>
 
     <!-- ............................about..................... -->
-
-    <div class="about">
-      <h2>About</h2>
+<section class="about">
+    <div class="about-container">
+    
       <div class="about-details">
+        <h2>About</h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut pretium
         sed lobortis. Erat enim viverra pulvinar volutpat bibendum in enim
         pulvinar et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
@@ -62,37 +66,106 @@
         <img src="/image/about.jpg" alt="image" class="image" />
       </div>
     </div>
-
+</section>
     <!-- ...................preojects......................... -->
-
-    <div class="project">
-      <h2>My projects</h2>
-      <div class="project-details">
-        <ul>
-          <li>React js</li>
-          <li>TypeScripts</li>
-          <li>JavaScripts</li>
-          <li>Python</li>
-          <li>Postgress</li>
-        </ul>
-      </div>
+<section class="project">
+<h2>My projects</h2>
+    <div class="project-card">
+      
+   
       <div class="project-image">
-        <img src="/image/Screenshot from 2022-02-03 07-54-36.png" alt="image" />
+        <img src="/image/Screenshot from 2022-02-03 07-54-36.png" alt="image"  class="image"/>
       </div>
-      <div class="project-details">
+         <div class="project-details">
         <ul>
-          <li>React js</li>
-          <li>TypeScripts</li>
-          <li>JavaScripts</li>
-          <li>Python</li>
-          <li>Postgress</li>
+          <li>
+            <h3>React js</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div>
+          </li>
+          <li><h3>TypeScripts</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div></li>
+          <li><h3>JavaScripts</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div></li>
+          <li><h3>Python</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div></li>
+          <li><h3>Postgress</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div></li>
         </ul>
-      </div>
-      <div class="project-image">
-        <img src="/image/Screenshot from 2022-02-03 07-54-36.png" alt="image" />
       </div>
     </div>
-
+     <div class="project-card">
+      <div class="project-image">
+        <img src="/image/Screenshot from 2022-02-03 07-54-36.png" alt="image" class="image"/>
+      </div>
+         <div class="project-details">
+        <ul>
+          <li>
+            
+            <h3>React js</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div>
+          </li>
+          <li><h3>TypeScripts</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div></li>
+          <li><h3>JavaScripts</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div></li>
+          <li><h3>Python</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div></li>
+          <li><h3>Postgress</h3><p class="percentage">85%</p>
+            <div class="pro-container">    
+              <div class="progress progress-moved">
+                 <div class="progress-bar" >
+                   </div>                       
+                </div> 
+            </div></li>
+        </ul>
+      </div>
+    </div>
+</section>
     <!-- .................blog.................................... -->
 
     <section class="blog">
@@ -202,7 +275,8 @@
 
     <!-- ....................footer.................................. -->
     <section class="footer">
-      <div>
+      <div class="footer-card">
+      <div class="footer-detail first">
         <h3>Our services</h3>
         <ul>
           <li>React js</li>
@@ -210,25 +284,69 @@
           <li>JavaScripts</li>
           <li>Python</li>
           <li>Postgress</li>
+          <li>WebDevelopment</li>
+          <li>WebDesign</li>
+          <li>Ruby</li>
         </ul>
-        <h3>Social media</h3>
+        <h3>Social media:</h3>
+        <ul class="icons">
+          <li>
+            <img src="/icons/facebook.png" class="image">
+          </li>
+          <li>
+            <img src="/icons/gmail.png" class="image">
+          </li>
+          <li>
+            <img src="/icons/github.png" class="image">
+          </li>
+          <li>
+            <img src="/icons/instagram.png" class="image">
+          </li>
+          <li>
+            <img src="/icons//pinterest.png" class="image">
+          </li>
+          <li>
+            <img src="/icons/twitter.png" class="image">
+          </li>
+        </ul>
       </div>
 
       <!-- ............................................. -->
 
-      <div>
+      <div  class="footer-detail middle">
         <h3>Contact us</h3>
+         <ul>
+          <li>Email:kareraolivier@gmail.com</li>
+          <li>Tel:+250788888443</li>
+          <li>Phone:+25073000777</li>
+        </ul>
         <h3>E-mail us</h3>
+        <input type="text" placeholder="E-mail.....">
+        <input type="text" placeholder="Message....." class="Message">
+        <button class="button">send</button>
       </div>
 
       <!-- ......................................................... -->
 
-      <div>
-        <h3>location</h3>
+      <div class="footer-detail last">
+        <h3>Location</h3>
+        <ul>
+          <li>P.O.BOX:120Bd</li>
+          <li>209.34.12.780</li>
+          <li>Nyarugenge/gitega</li>
+        </ul>
+      <div class="last-location">
+        <img src="/image/rwandamap.jpg" alt="map" class="image"/>
+      </div>
+      <div class="subscribe">
+        <input type="text" placeholder="Subscribe.....">
+        <button class="button">Subscribe</button>
+      </div>
+      </div>
       </div>
     </section>
 
     <!-- ..................latest..................... -->
-    <h3>karera.co.ltd copyright</h3>
+    <h3 style="text-align: center; height:3px;">karera.co.ltd copyright</h3>
   </body>
 </html>
