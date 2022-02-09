@@ -1,0 +1,18 @@
+.login {
+  margin: 23rem;
+  background-color: blue;
+  height: 25rem;
+  width: 40rem;
+  margin-top: 1px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 65px -21px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 65px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 65px -21px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-login {
+  height: 100%;
+  width: 50%;
+  background-color: white;
+}

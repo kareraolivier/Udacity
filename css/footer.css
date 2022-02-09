@@ -1,11 +1,12 @@
 .footer {
   background-color: rgb(218, 218, 218);
+  /* background-repeat: no-repeat; */
   color: rgba(15, 25, 111, 1);
-  height: 30rem;
+  height: 35rem;
   font-size: 20;
 }
 .footer h3 {
-  margin: 25px;
+  margin: 40px;
 }
 .image {
   width: 100%;
@@ -16,8 +17,7 @@
   margin: 4rem;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  /* border: violet solid; */
+  width: 100%;
 }
 
 .footer-detail {
@@ -31,16 +31,16 @@
 .icons li {
   display: flex;
   float: left;
-  margin: 10px;
   height: 30px;
   width: 30px;
+  margin: 10px;
 }
 /* .first {
 
 } */
 .middle button {
   border: none;
-  margin-left: 8rem;
+  margin-left: 14rem;
   color: white;
   height: 2rem;
   width: 6rem;
@@ -53,45 +53,44 @@
 
 .middle input {
   border: none;
-  background: transparent;
+  background: white;
   margin-left: 2rem;
   padding: 7px 8px;
   font-size: 14px;
   color: inherit;
-  border: solid rgb(15, 25, 111);
-  border-radius: 10px;
+  /* border: solid rgb(15, 25, 111); */
+  border-radius: 5px;
   float: left;
   margin: 3px;
   width: 15rem;
 }
 .middle .message {
-  height: 6rem;
+  height: 10rem;
+  width: 20rem;
 }
 
-.last-location {
-  float: right;
+.last-location iframe {
+  height: 300px;
+  width: 300px;
 }
 .last h3 {
   margin: 20px;
 }
 .subscribe {
-  margin-left: 10px;
   margin: 5px;
 }
 .subscribe input {
   border: none;
-  background: transparent;
+  background: white;
   margin: 0;
   padding: 7px 8px;
   font-size: 14px;
   color: inherit;
-  border: solid rgb(15, 25, 111);
-  border-radius: 10px;
-  float: right;
+  border-radius: 5px;
 }
 .last button {
   border: none;
-  margin-left: 8rem;
+
   color: white;
   height: 2rem;
   width: 6rem;
@@ -100,9 +99,12 @@
   background-color: rgba(15, 25, 111, 1);
   margin-bottom: 5px;
   border-radius: 3px;
-  float: right;
+  /* float: right; */
 }
 .last-location img {
   height: 15rem;
   width: 15rem;
+}
+.karera {
+  text-align: center;
 }
