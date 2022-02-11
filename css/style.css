@@ -12,10 +12,30 @@ body {
 }
 .header {
   height: 5rem;
-  margin-top: 2rem;
+
   position: relative;
-  /* border: yellow solid; */
 }
+.header-color {
+  background-color: rgb(15, 25, 111);
+  color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.header-color .tabs {
+  color: white;
+}
+
+.header-color .menu .code {
+  border: solid 0f196f;
+  height: 2.5rem;
+  width: 4rem;
+  text-align: center;
+  color: rgb(15, 25, 111);
+  background-color: white;
+  display: block;
+}
+
 .menu {
   float: left;
   display: block;
@@ -225,7 +245,7 @@ h2 {
 }
 .card-img {
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 .card button {
   border: none;

@@ -19,7 +19,7 @@
 }
 .card-img {
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 .card button {
   border: none;
@@ -58,10 +58,11 @@
   color: rgb(32, 38, 95);
 }
 .single-comment {
+  padding: 10px;
   border-radius: 5px;
-  box-shadow: 10px 10px 65px -21px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 65px -21px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 65px -21px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
 }
 .single-comment h3 p {
   margin: 5px;
