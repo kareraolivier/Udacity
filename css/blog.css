@@ -36,13 +36,16 @@
 
 .single-blog {
   margin: 5rem;
+  box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
 }
 .post p {
   width: 60rem;
   font-size: 20px;
 }
 .post img {
-  width: 65%;
+  width: 70%;
 }
 .author {
   color: rgba(15, 25, 111, 1);

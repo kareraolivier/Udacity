@@ -177,7 +177,7 @@ width: ;
   cursor: pointer;
   color: rgba(15, 25, 111, 1);
 }
-.karera .container .form .form-content .signup-form .text label:hover {
+.karera .container .form .form-content .text label:hover {
   text-decoration: underline;
 }
 .karera .container #flip {
