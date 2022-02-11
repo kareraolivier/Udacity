@@ -22,11 +22,11 @@ body {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.header-color .tabs {
+.header-color a {
   color: white;
 }
 
-.header-color .menu .code {
+.header-color .menu .code1 {
   border: solid 0f196f;
   height: 2.5rem;
   width: 4rem;
@@ -35,7 +35,7 @@ body {
   background-color: white;
   display: block;
 }
-
+/* ..............................header................................. */
 .menu {
   float: left;
   display: block;
