@@ -1,5 +1,5 @@
 .blog {
-  margin: 3rem;
+  /* margin: rem; */
   text-align: center;
   font-size: 20;
   background-color: white;
@@ -7,7 +7,7 @@
 }
 .card {
   width: 280px;
-  margin: 10px;
+  /* margin: 10px; */
   float: left;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -35,13 +35,14 @@
 }
 
 .single-blog {
+  position: relative;
   margin: 5rem;
   box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
 }
 .post p {
-  width: 60rem;
+  width: 75%;
   font-size: 20px;
 }
 .post img {
@@ -52,7 +53,8 @@
   font-weight: bold;
 }
 .comment-card {
-  width: 50rem;
+  position: relative;
+  width: 80%;
   font-size: 18px;
   padding: -5px;
 }
@@ -83,11 +85,11 @@
 }
 .post-commet .comment-name {
   height: 2rem;
-  width: 20rem;
+  width: 80%;
 }
 .post-commet .comment-textbox {
   height: 10rem;
-  width: 30rem;
+  width: 80%;
 }
 .post-commet button {
   color: white;
@@ -97,6 +99,6 @@
   height: 2.5rem;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 23.5rem;
+  /* margin-left: 23.5rem; */
   border-radius: 5px;
 }

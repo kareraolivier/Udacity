@@ -16,7 +16,7 @@
 }
 .karera .container {
   position: relative;
-  max-width: 850px;
+  max-width: 700px;
   width: 100%;
   background: rgb(255, 255, 255);
   padding: 40px 30px;
@@ -59,7 +59,7 @@
   align-items: center;
   justify-content: center;
   justify-items: center;
-  margin-left: 3rem;
+  margin-left: 2.2rem;
 }
 .karera .container .cover .back {
   transform: rotateY(-180deg);
@@ -192,6 +192,12 @@ width: ;
     width: 100%;
   }
   .form-content .signup-form {
+    display: none;
+  }
+  .karera .container #flip:checked ~ form .signup-form {
+    display: block;
+  }
+  .karera .container #flip:checked ~ form .login-form {
     display: none;
   }
 }

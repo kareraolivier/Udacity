@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 body {
   margin: 0rem;
   padding: 0;
@@ -18,7 +24,8 @@ body {
 }
 
 .pro-container {
-  width: 500px;
+  position: relative;
+  width: 100%;
   text-align: center;
 }
 

@@ -1,9 +1,16 @@
+* {
+  margin: 2px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 .footer {
+  top: 1px;
   background-color: rgb(218, 218, 218);
-  /* background-repeat: no-repeat; */
   color: rgba(15, 25, 111, 1);
-  height: 35rem;
   font-size: 20;
+  background-position: bottom;
+  width: 100%;
 }
 .footer h3 {
   margin: 40px;
@@ -14,18 +21,21 @@
   border-radius: 10px;
 }
 .footer-card {
-  margin: 4rem;
+  margin: 2rem;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  justify-content: center;
 }
 
 .footer-detail {
-  margin-right: 1rem;
-  width: 32%;
+  margin: 30px;
+  width: 300px;
+  /* border: solid blue; */
 }
 .footer-detail ul li {
   display: block;
+  position: relative;
 }
 
 .icons li {
@@ -40,7 +50,7 @@
 } */
 .middle button {
   border: none;
-  margin-left: 14rem;
+  margin-left: 12rem;
   color: white;
   height: 2rem;
   width: 6rem;
@@ -54,7 +64,7 @@
 .middle input {
   border: none;
   background: white;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   padding: 7px 8px;
   font-size: 14px;
   color: inherit;
@@ -66,7 +76,8 @@
 }
 .middle .message {
   height: 10rem;
-  width: 20rem;
+  width: 100%;
+  margin: 3px;
 }
 
 .last-location iframe {
@@ -90,7 +101,6 @@
 }
 .last button {
   border: none;
-
   color: white;
   height: 2rem;
   width: 6rem;
@@ -107,4 +117,9 @@
 }
 .karera {
   text-align: center;
+}
+.footer-detail .first,
+.footer-detail .middle,
+.footer-detail .last {
+  width: 100%;
 }
