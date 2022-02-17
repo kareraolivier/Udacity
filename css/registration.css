@@ -76,15 +76,7 @@
   font-weight: 500;
   backface-visibility: hidden;
 }
-/* .karera .container .cover::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(15, 25, 111, 1);
-  opacity: 0.5;
-  margin-left: ;
-} */
+
 .karera .container #flip:checked ~ .cover {
   transform: rotateY(-180deg);
 }
@@ -113,12 +105,7 @@
   font-weight: bold;
   color: rgba(15, 25, 111, 1);
 }
-/* form.form-content.tittle::before{
-content:"";
-position: absolute;
-height: 3px;
-width: ;
-} */
+
 .karera .container .form .form-content .login-form .input-boxes,
 .karera .container .form .form-content .signup-form .input-boxes {
   margin-top: 30px;

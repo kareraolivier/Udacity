@@ -102,3 +102,30 @@
   /* margin-left: 23.5rem; */
   border-radius: 5px;
 }
+
+@media (max-width: 425px) {
+  .single-blog {
+    margin: 0rem;
+  }
+  .post p {
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+  }
+  .post img {
+    width: 100%;
+  }
+  .single-blog {
+    padding: 50px 20px;
+  }
+  h2 {
+    text-align: center;
+    color: rgba(15, 25, 111, 1);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .blog-post {
+    margin-bottom: 50px;
+  }
+}
