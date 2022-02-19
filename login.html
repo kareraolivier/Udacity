@@ -41,18 +41,38 @@
         </div>
         <div class="tabs">
           <div class="menu" id="Home">
-            <a class="nav-link" href="index.html">Home</a>
-          </div>
-          <div class="menu"><a class="nav-link" href="#About">About</a></div>
-          <div class="menu">
-            <a class="nav-link" href="#Project">Project</a>
-          </div>
-          <div class="menu"><a class="nav-link" href="blog.html">Blog</a></div>
-          <div class="menu">
-            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link" id="menu" onClick="hideMenu" href="index.html"
+              >Home</a
+            >
           </div>
           <div class="menu">
-            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" id="menu" onClick="hideMenu" href="#About"
+              >About</a
+            >
+          </div>
+          <div class="menu">
+            <a
+              class="nav-link"
+              id="menu"
+              onClick="hideMenu"
+              href="/index.html#project"
+              >Project</a
+            >
+          </div>
+          <div class="menu">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="blog.html"
+              >Blog</a
+            >
+          </div>
+          <div class="menu">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="#contact"
+              >Contact</a
+            >
+          </div>
+          <div class="menu">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="login.html"
+              >Login</a
+            >
           </div>
         </div>
       </div>
@@ -234,5 +254,39 @@
     </section>
 
     <!-- ..................latest..................... -->
+
+    <!-- ................firebase.................... -->
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDpg2jHNq7pYW-vNVCvYhYdPy-gEucZ940",
+        authDomain: "kareraportfolio.firebaseapp.com",
+        projectId: "kareraportfolio",
+        storageBucket: "kareraportfolio.appspot.com",
+        messagingSenderId: "992072168631",
+        appId: "1:992072168631:web:83aca58d814f6448fd8932",
+        measurementId: "G-8ZQRG08K4J",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
+  <script
+    src="https://kit.fontawesome.com/yourcode.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/edf035d6ec.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
