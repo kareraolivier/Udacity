@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/dashboard/css/dashboard.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/edf035d6ec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>dashboard</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="tinymce/tinymce.min.js"></script>
+    <script type="module">
+      tinymce.init({
+        selector: "textarea#myTextarea",
+        plugins:
+          "print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons",
+        imagetools_cors_hosts: ["picsum.photos"],
+        menubar: "file edit view insert format tools table help",
+        toolbar:
+          "undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl",
+        toolbar_sticky: true,
+        autosave_ask_before_unload: true,
+        autosave_interval: "30s",
+        autosave_prefix: "{path}{query}-{id}-",
+        autosave_restore_when_empty: false,
+        autosave_retention: "2m",
+        image_advtab: true,
+        /*content_css: '//www.tiny.cloud/css/codepen.min.css',*/
+        link_list: [
+          { title: "My page 1", value: "https://www.codexworld.com" },
+          { title: "My page 2", value: "https://www.xwebtools.com" },
+        ],
+        image_list: [
+          { title: "My page 1", value: "https://www.codexworld.com" },
+          { title: "My page 2", value: "https://www.xwebtools.com" },
+        ],
+        image_class_list: [
+          { title: "None", value: "" },
+          { title: "Some class", value: "class-name" },
+        ],
+        importcss_append: true,
+        file_picker_callback: function (callback, value, meta) {
+          /* Provide file and text for the link dialog */
+          if (meta.filetype === "file") {
+            callback("https://www.google.com/logos/google.jpg", {
+              text: "My text",
+            });
+          }
+
+          /* Provide image and alt text for the image dialog */
+          if (meta.filetype === "image") {
+            callback("https://www.google.com/logos/google.jpg", {
+              alt: "My alt text",
+            });
+          }
+
+          /* Provide alternative source and posted for the media dialog */
+          if (meta.filetype === "media") {
+            callback("movie.mp4", {
+              source2: "alt.ogg",
+              poster: "https://www.google.com/logos/google.jpg",
+            });
+          }
+        },
+        templates: [
+          {
+            title: "New Table",
+            description: "creates a new table",
+            content:
+              '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>',
+          },
+          {
+            title: "Starting my story",
+            description: "A cure for writers block",
+            content: "Once upon a time...",
+          },
+          {
+            title: "New list with dates",
+            description: "New List with dates",
+            content:
+              '<div class="mceTmpl"><span class="cdate">cdate</span><br /><span class="mdate">mdate</span><h2>My List</h2><ul><li></li><li></li></ul></div>',
+          },
+        ],
+        template_cdate_format: "[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]",
+        template_mdate_format: "[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]",
+        height: 400,
+        image_caption: true,
+        quickbars_selection_toolbar:
+          "bold italic | quicklink h2 h3 blockquote quickimage quicktable",
+        noneditable_noneditable_class: "mceNonEditable",
+        toolbar_mode: "sliding",
+        contextmenu: "link image imagetools table",
+      });
+    </script>
+  </head>
+  <body>
+    <header class="header header-color">
+      <div>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="checkbtn" style="color: white">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <div
+          class="menu code code1"
+          style="background-color: white; color: rgba(15, 25, 111, 1)"
+        >
+          code
+        </div>
+        <div class="tabs">
+          <div class="menu search"></div>
+          <div class="menu" id="Home">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="index.html"
+              >Home</a
+            >
+          </div>
+          <div class="menu">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="#About"
+              >About</a
+            >
+          </div>
+          <div class="menu">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="#Project"
+              >Project</a
+            >
+          </div>
+          <div class="menu">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="#Blog"
+              >Blog</a
+            >
+          </div>
+          <div class="menu">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="#Contact"
+              >Contact</a
+            >
+          </div>
+          <div class="menu">
+            <a class="nav-link" id="menu" onClick="hideMenu" href="/login.html"
+              >Logout</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="user">
+      <i class="fas fa-bars"></i>
+      <div class="user_name">welcome</div>
+    </div>
+    <div class="dashboard">
+      <div class="dashboard_menu">
+        <ul>
+          <li id="view_profile">View profile</li>
+          <li id="view_article">View article</li>
+          <li id="view_comment">View comments</li>
+          <li id="view_email">View e-mails</li>
+          <li id="view_subscribers">View subscribers</li>
+        </ul>
+      </div>
+      <div class="dashboard_containt">
+        <div class="article" id="dsArticle">
+          <h2>create articles</h2>
+
+          <textarea name="myTextarea" id="myTextarea"></textarea>
+        </div>
+        <div class="profile" id="dsProfile">profile</div>
+        <div class="view_article" id="dsViewArticle">view old articles</div>
+        <div class="comment" id="dsComment">comments</div>
+        <div class="email" id="dsEmail">list of emails</div>
+        <div class="subscribers" id="dsSubscribers">list of subscribers</div>
+      </div>
+    </div>
+
+    <!-- ................firebase.................... -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+
+    <script src="/dashboard/js/dashboard.js"></script>
+  </body>
+</html>

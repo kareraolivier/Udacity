@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.user {
+  padding: 20px 30px 0 30px;
+  height: 4rem;
+  width: 100%;
+  background-color: rgb(197, 197, 197);
+}
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard_menu {
+  padding: 40px 10px 10px 40px;
+  width: 25%;
+  height: 35rem;
+  background-color: rgba(15, 25, 111, 1);
+  color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.dashboard_menu ul li {
+  margin: 20px;
+  font-weight: 400;
+  display: block;
+  font-size: 25px;
+  cursor: pointer;
+}
+.dashboard_containt {
+  width: 60%;
+  padding: 5px 0 0 20px;
+}

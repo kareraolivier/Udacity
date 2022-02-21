@@ -131,14 +131,18 @@
               <div class="title">login</div>
               <div class="input-boxes">
                 <div class="input-box">
-                  <input type="text" placeholder="E-mail" />
+                  <input type="text" placeholder="E-mail" id="login_email" />
                 </div>
                 <div class="input-box">
-                  <input type="password" placeholder="password" />
+                  <input
+                    type="password"
+                    placeholder="password"
+                    id="login_password"
+                  />
                 </div>
                 <div class="text"><a href="#">Forgot password</a></div>
                 <div class="button input-box">
-                  <input type="submit" value="submit" />
+                  <input type="submit" value="Login" id="login_button" />
                 </div>
                 <div class="text">
                   Don't have an account<label for="flip"> Signup now</label>
@@ -150,16 +154,24 @@
               <div class="title">Signup</div>
               <div class="input-boxes">
                 <div class="input-box">
-                  <input type="text" placeholder="Your names" />
+                  <input
+                    type="text"
+                    placeholder="Your names"
+                    id="signup_name"
+                  />
                 </div>
                 <div class="input-box">
-                  <input type="text" placeholder="E-mail" />
+                  <input type="text" placeholder="E-mail" id="signup_email" />
                 </div>
                 <div class="input-box">
-                  <input type="password" placeholder="password" />
+                  <input
+                    type="password"
+                    placeholder="password"
+                    id="singup_password"
+                  />
                 </div>
                 <div class="button input-box">
-                  <input type="submit" value="submit" />
+                  <input type="submit" value="Signup" id="signup_button" />
                 </div>
                 <div class="text">
                   Allredy have an account<label for="flip"> Login now</label>
@@ -257,29 +269,11 @@
 
     <!-- ................firebase.................... -->
 
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyDpg2jHNq7pYW-vNVCvYhYdPy-gEucZ940",
-        authDomain: "kareraportfolio.firebaseapp.com",
-        projectId: "kareraportfolio",
-        storageBucket: "kareraportfolio.appspot.com",
-        messagingSenderId: "992072168631",
-        appId: "1:992072168631:web:83aca58d814f6448fd8932",
-        measurementId: "G-8ZQRG08K4J",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="/dashboard/js/login.js"></script>
   </body>
   <script
     src="https://kit.fontawesome.com/yourcode.js"
