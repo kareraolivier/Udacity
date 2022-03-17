@@ -6,13 +6,13 @@
 }
 
 .karera {
-  /* margin-top: 20px; */
-  min-height: 100hv;
+  /* min-height: 50hv; */
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgb(255, 255, 255);
-  padding: 30px;
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 .karera .container {
   position: relative;
@@ -173,12 +173,22 @@
 @media (max-width: 1000px) {
   .karera .container .cover {
     display: none;
+    position: absolute;
+  }
+  .karera .container {
+    position: unset;
+  }
+  .karera .container .form .form-content .input-boxes .input-box {
+    display: flex;
+
+    position: unset;
   }
   .form-content .login-form,
   .form-content .signup-form {
     width: 100%;
   }
   .form-content .signup-form {
+    position: absolute;
     display: none;
   }
   .karera .container #flip:checked ~ form .signup-form {

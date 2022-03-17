@@ -141,7 +141,12 @@
             >
           </div>
           <div class="menu">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="#Blog"
+            <a
+              class="nav-link"
+              id="menu"
+              onClick="hideMenu"
+              location:blank
+              href="Blog.html"
               >Blog</a
             >
           </div>
@@ -176,26 +181,84 @@
       </div>
       <div class="dashboard_containt">
         <div class="article" id="dsArticle">
-          <h2>create articles</h2>
-
+          <h2>Create articles</h2>
+          <input
+            type="text"
+            placeholder="enter your blog title"
+            class="articleTitle"
+            id="articleTitle"
+          />
           <textarea name="myTextarea" id="myTextarea"></textarea>
-          <input type="button" value="Upload" />
+          <input
+            type="button"
+            value="Upload"
+            id="blogButton"
+            class="articleButton"
+          />
         </div>
         <div class="profile" id="dsProfile">profile</div>
-        <div class="view_article" id="dsViewArticle">view old articles</div>
+        <div class="view_article" id="dsViewArticle">
+          <div class="getArticle" id="getArticle">
+            <div class="getArticle">
+              <!-- <h1 class="articleTitle">title</h1>
+              <p class="articleBody">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+                pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Id ut pretium sed lobortis. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Id ut pretium sed
+                lobortis. Lorem ipsum dolor sit amet. Id ut pretium sed
+                lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Id ut pretium sed lobortis. Lorem ipsum dolor sit amet.
+              </p>
+             <button id="Edit" class="Edit articleButton">Edit</button>
+          <button id="Delete" class="Delete articleButton">Delete</button>
+          <button id="Repost" class="Repost articleButton">Repost</button>
+         -->
+            </div>
+          </div>
+        </div>
+
         <div class="comment" id="dsComment">comments</div>
-        <div class="email" id="dsEmail">list of emails</div>
+
+        <div class="email" id="dsEmail">
+          <table class="table">
+            <tr class="low">
+              <th class="colomn">Date</th>
+              <th class="colomn">Email</th>
+              <th class="colomn">Message</th>
+            </tr>
+          </table>
+          <div class="tableContaint">
+            <div id="dsTable"></div>
+          </div>
+        </div>
+
         <div class="subscribers" id="dsSubscribers">list of subscribers</div>
       </div>
     </div>
 
     <!-- ................firebase.................... -->
 
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
-
-    <script src="/dashboard/js/dashboard.js"></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"
+    ></script>
+    <script defer src="/dashboard/js/configuration.js"></script>
+    <script defer src="/dashboard/js/createArticle.js"></script>
+    <script defer src="/dashboard/js/email.js"></script>
+    <script defer src="/dashboard/js/dashboard.js"></script>
+    <script defer src="/dashboard/js/comment.js"></script>
   </body>
 </html>

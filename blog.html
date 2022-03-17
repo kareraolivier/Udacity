@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/blog.css" />
     <link rel="stylesheet" href="/css/style.css" />
-
     <link rel="stylesheet" href="/css/footer.css" />
 
     <link
@@ -22,6 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <title>blog</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
     <header class="header header-color">
@@ -29,38 +29,41 @@
         <input type="checkbox" name="" id="check" />
         <label for="check" class="checkbtn" style="color: white">
           <i class="fas fa-bars"></i>
+          <!-- <i class="fa-solid fa-bars"></i> -->
         </label>
-
         <div
-          class="menu code code1"
+          class="menu code"
           style="background-color: white; color: rgba(15, 25, 111, 1)"
         >
           code
         </div>
         <div class="tabs">
-          <div class="menu search"></div>
           <div class="menu" id="Home">
             <a class="nav-link" id="menu" onClick="hideMenu" href="index.html"
               >Home</a
             >
           </div>
           <div class="menu">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="#About"
+            <a class="nav-link" id="menu1" onClick="hideMenu" href="#About"
               >About</a
             >
           </div>
           <div class="menu">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="#Project"
+            <a
+              class="nav-link"
+              id="menu"
+              onClick="hideMenu"
+              href="/index.html#project"
               >Project</a
             >
           </div>
           <div class="menu">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="#Blog"
+            <a class="nav-link" id="menu" onClick="hideMenu" href="blog.html"
               >Blog</a
             >
           </div>
           <div class="menu">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="#Contact"
+            <a class="nav-link" id="menu" onClick="hideMenu" href="#contact"
               >Contact</a
             >
           </div>
@@ -78,11 +81,6 @@
       <div class="blog-post">
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         <div class="post">
-          <!-- <p>
-            The Joint European Torus has sustained a super-hot plasma for 5
-            seconds, producing 59 megajoules of energy and suggesting that
-            larger experiments could produce more power than is put in
-          </p> -->
           <img src="/image/singleblog.jpg" alt="single post" />
           <p>
             A white hot river of heat winds around the bottom of a
@@ -341,9 +339,23 @@
               <li>Phone:+25073000777</li>
             </ul>
             <h3>E-mail us</h3>
-            <input type="text" placeholder="E-mail....." />
-            <input type="text" placeholder="Message....." class="Message" />
-            <button class="button">send</button>
+            <form method="post">
+              <input
+                type="text"
+                placeholder="E-mail....."
+                id="user_email"
+                required
+                pattern=".*.com"
+              />
+              <input
+                type="text"
+                placeholder="Message....."
+                class="Message"
+                id="user_emailMessage"
+                required
+              />
+              <button class="button" id="Button">send</button>
+            </form>
           </div>
         </div>
         <!-- ......................................................... -->
@@ -368,8 +380,10 @@
               ></iframe>
             </div>
             <div class="subscribe">
-              <input type="text" placeholder="Subscribe....." />
-              <button class="button">Subscribe</button>
+              <form method="post">
+                <input type="text" placeholder="Subscribe....." required />
+                <button class="button">Subscribe</button>
+              </form>
             </div>
           </div>
         </div>
@@ -385,8 +399,12 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
-
-    <script src="/dashboard/js/comment.js"></script>
+    <script defer src="/dashboard/js/configuration.js"></script>
+    <script defer src="/dashboard/js/dashboard.js"></script>
+    <script defer src="/dashboard/js/email.js"></script>
+    <script defer src="/dashboard/js/login.js"></script>
+    <script defer src="/dashboard/js/editor.js"></script>
+    <script defer src="/js/index.js"></script>
   </body>
 
   <script
