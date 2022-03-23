@@ -3,6 +3,7 @@
   font-size: 20;
   background-color: white;
   height: 65rem;
+  padding-left: 5rem;
 }
 .card {
   width: 280px;
@@ -33,6 +34,7 @@
 }
 
 .single-blog {
+  padding-left: 5rem;
   padding-top: 5rem;
   box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 20px -21px rgba(0, 0, 0, 0.75);
@@ -88,6 +90,9 @@
   height: 10rem;
   width: 80%;
   text-indent: 4ch;
+  display: flex;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
 }
 .post-commet button {
   color: white;

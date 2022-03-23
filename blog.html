@@ -1,83 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/blog.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/edf035d6ec.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>blog</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-  </head>
-  <body>
-    <header class="header header-color">
-      <div>
-        <input type="checkbox" name="" id="check" />
-        <label for="check" class="checkbtn" style="color: white">
-          <i class="fas fa-bars"></i>
-          <!-- <i class="fa-solid fa-bars"></i> -->
-        </label>
-        <div
-          class="menu code"
-          style="background-color: white; color: rgba(15, 25, 111, 1)"
-        >
-          code
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/blog.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/edf035d6ec.js" crossorigin="anonymous"></script>
+  <title>blog</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+</head>
+
+<body>
+  <header class="header header-color">
+    <div>
+      <input type="checkbox" name="" id="check" />
+      <label for="check" class="checkbtn" style="color: white">
+        <i class="fas fa-bars"></i>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+      </label>
+      <div class="menu code" style="background-color: white; color: rgba(15, 25, 111, 1)">
+        code
+      </div>
+      <div class="tabs">
+        <div class="menu" id="Home">
+          <a class="nav-link" id="menu1" href="index.html">Home</a>
         </div>
-        <div class="tabs">
-          <div class="menu" id="Home">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="index.html"
-              >Home</a
-            >
-          </div>
-          <div class="menu">
-            <a class="nav-link" id="menu1" onClick="hideMenu" href="#About"
-              >About</a
-            >
-          </div>
-          <div class="menu">
-            <a
-              class="nav-link"
-              id="menu"
-              onClick="hideMenu"
-              href="/index.html#project"
-              >Project</a
-            >
-          </div>
-          <div class="menu">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="blog.html"
-              >Blog</a
-            >
-          </div>
-          <div class="menu">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="#contact"
-              >Contact</a
-            >
-          </div>
-          <div class="menu">
-            <a class="nav-link" id="menu" onClick="hideMenu" href="login.html"
-              >Login</a
-            >
-          </div>
+        <div class="menu">
+          <a class="nav-link" id="menu2" href="./index.html#About">About</a>
+        </div>
+        <div class="menu">
+          <a class="nav-link" id="menu3" href="/index.html#Project">Project</a>
+        </div>
+        <div class="menu">
+          <a class="nav-link" id="menu4" href="blog.html">Blog</a>
+        </div>
+        <div class="menu">
+          <a class="nav-link" id="menu5" href="#Contact">Contact</a>
+        </div>
+        <div class="menu">
+          <a class="nav-link" id="menu6" href="login.html">Login</a>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- .........................single blog............................... -->
-    <section class="single-blog">
+  <!-- .........................single blog............................... -->
+  <section class="single-blog">
+    <div id="singleBlog">
       <div class="blog-post">
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         <div class="post">
@@ -126,18 +101,8 @@
         </div>
         <div class="comment-card">
           <div class="post-commet">
-            <input
-              type="text"
-              placeholder="your name"
-              class="comment-name"
-              id="comment_name"
-            />
-            <input
-              type="text"
-              placeholder="comment...."
-              class="comment-textbox"
-              id="comment_text"
-            />
+            <input type="text" placeholder="your name" class="comment-name" id="comment_name" />
+            <input type="text" placeholder="comment...." class="comment-textbox" id="comment_text" />
             <button id="comment_button">comment</button>
           </div>
           <div class="comments">
@@ -165,254 +130,234 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ..............................blog post........................... -->
-    <section class="blog" id="Blog">
-      <h3>More stories on my blog</h3>
-      <div class="card">
-        <div class="card-img">
-          <img src="/image/bitcoin.png" alt="bitcoin" class="image" />
-        </div>
-        <div>
-          <h3>Bitcoin</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
-            pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Id ut pretium sed lobortis.
-          </p>
-          <button>Read more</button>
-        </div>
+  <!-- ..............................blog post........................... -->
+  <section class="blog" id="Blog">
+    <h3>More stories on my blog</h3>
+    <div class="card">
+      <div class="card-img">
+        <img src="/image/bitcoin.png" alt="bitcoin" class="image" />
       </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="/image/siglepost.jpeg" alt="music" class="image" />
-        </div>
-        <div>
-          <h3>Music</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
-            pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Id ut pretium sed lobortis.
-          </p>
-          <button>Read more</button>
-        </div>
+      <div>
+        <h3>Bitcoin</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+          pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Id ut pretium sed lobortis.
+        </p>
+        <button>Read more</button>
       </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="/image/bitcoin.png" alt="bitcoin" class="image" />
-        </div>
-        <div>
-          <h3>Bitcoin</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
-            pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Id ut pretium sed lobortis.
-          </p>
-          <button>Read more</button>
-        </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="/image/siglepost.jpeg" alt="music" class="image" />
       </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="/image/singleblog.jpg" alt="music" class="image" />
-        </div>
-        <div>
-          <h3>Music</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
-            pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Id ut pretium sed lobortis.
-          </p>
-          <button>Read more</button>
+      <div>
+        <h3>Music</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+          pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Id ut pretium sed lobortis.
+        </p>
+        <button>Read more</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="/image/bitcoin.png" alt="bitcoin" class="image" />
+      </div>
+      <div>
+        <h3>Bitcoin</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+          pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Id ut pretium sed lobortis.
+        </p>
+        <button>Read more</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="/image/singleblog.jpg" alt="music" class="image" />
+      </div>
+      <div>
+        <h3>Music</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+          pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Id ut pretium sed lobortis.
+        </p>
+        <button>Read more</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="/image/singleblog.jpg" alt="bitcoin" class="image" />
+      </div>
+      <div>
+        <h3>Bitcoin</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+          pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Id ut pretium sed lobortis.
+        </p>
+        <button>Read more</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="/image/music.png" alt="music" class="image" />
+      </div>
+      <div>
+        <h3>Music</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+          pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Id ut pretium sed lobortis.
+        </p>
+        <button>Read more</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="/image/siglepost.jpeg" alt="bitcoin" class="image" />
+      </div>
+      <div>
+        <h3>Bitcoin</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+          pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Id ut pretium sed lobortis.
+        </p>
+        <button>Read more</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="/image/music.png" alt="music" class="image" />
+      </div>
+      <div>
+        <h3>Music</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+          pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Id ut pretium sed lobortis.
+        </p>
+        <button>Read more</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ..............................end of blog posts...................................... -->
+
+  <!-- ..................................footer............................... -->
+
+  <section class="footer" id="Contact">
+
+    <div class="footer-card">
+      <div class="footer-detail">
+        <div class="first">
+          <h3>Our services</h3>
+          <ul>
+            <li>React js</li>
+            <li>TypeScripts</li>
+            <li>JavaScripts</li>
+            <li>Python</li>
+            <li>Postgress</li>
+            <li>WebDevelopment</li>
+            <li>WebDesign</li>
+            <li>Ruby</li>
+          </ul>
+          <h3>Social media:</h3>
+          <ul class="icons">
+            <li>
+              <img src="/icons/facebook.png" class="image" />
+            </li>
+            <li>
+              <img src="/icons/gmail.png" class="image" />
+            </li>
+            <li>
+              <img src="/icons/github.png" class="image" />
+            </li>
+            <li>
+              <img src="/icons/instagram.png" class="image" />
+            </li>
+            <li>
+              <img src="/icons//pinterest.png" class="image" />
+            </li>
+            <li>
+              <img src="/icons/twitter.png" class="image" />
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-img">
-          <img src="/image/singleblog.jpg" alt="bitcoin" class="image" />
-        </div>
-        <div>
-          <h3>Bitcoin</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
-            pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Id ut pretium sed lobortis.
-          </p>
-          <button>Read more</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="/image/music.png" alt="music" class="image" />
-        </div>
-        <div>
-          <h3>Music</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
-            pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Id ut pretium sed lobortis.
-          </p>
-          <button>Read more</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="/image/siglepost.jpeg" alt="bitcoin" class="image" />
-        </div>
-        <div>
-          <h3>Bitcoin</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
-            pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Id ut pretium sed lobortis.
-          </p>
-          <button>Read more</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="/image/music.png" alt="music" class="image" />
-        </div>
-        <div>
-          <h3>Music</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
-            pretium sed lobortis. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Id ut pretium sed lobortis.
-          </p>
-          <button>Read more</button>
-        </div>
-      </div>
-    </section>
+      <!-- ............................................. -->
 
-    <!-- ..............................end of blog posts...................................... -->
+      <div class="footer-detail">
+        <div class="middle">
+          <h3>Contact us</h3>
+          <ul>
+            <li>Email:kareraolivier@gmail.com</li>
+            <li>Tel:+250788888443</li>
+            <li>Phone:+25073000777</li>
+          </ul>
+          <h3>E-mail us</h3>
+          <form method="post">
+            <input type="text" placeholder="E-mail....." id="user_email" required pattern=".*.com" />
+            <input type="text" placeholder="Message....." class="Message" id="user_emailMessage" required />
+            <button class="button" id="emailButton">send</button>
+          </form>
+        </div>
+      </div>
+      <!-- ......................................................... -->
 
-    <!-- ..................................footer............................... -->
-
-    <section class="footer" id="Contact">
-      <div class="footer-card">
-        <div class="footer-detail">
-          <div class="first">
-            <h3>Our services</h3>
-            <ul>
-              <li>React js</li>
-              <li>TypeScripts</li>
-              <li>JavaScripts</li>
-              <li>Python</li>
-              <li>Postgress</li>
-              <li>WebDevelopment</li>
-              <li>WebDesign</li>
-              <li>Ruby</li>
-            </ul>
-            <h3>Social media:</h3>
-            <ul class="icons">
-              <li>
-                <img src="/icons/facebook.png" class="image" />
-              </li>
-              <li>
-                <img src="/icons/gmail.png" class="image" />
-              </li>
-              <li>
-                <img src="/icons/github.png" class="image" />
-              </li>
-              <li>
-                <img src="/icons/instagram.png" class="image" />
-              </li>
-              <li>
-                <img src="/icons//pinterest.png" class="image" />
-              </li>
-              <li>
-                <img src="/icons/twitter.png" class="image" />
-              </li>
-            </ul>
+      <div class="footer-detail">
+        <div class="last">
+          <h3>Location</h3>
+          <ul>
+            <li>P.O.BOX:120Bd</li>
+            <li>209.34.12.780</li>
+            <li>Nyarugenge/gitega</li>
+          </ul>
+          <div class="last-location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3302.3399210640373!2d30.04158451415958!3d-1.978165198557856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2srw!4v1644408492680!5m2!1sen!2srw"
+              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" class="image"></iframe>
           </div>
-        </div>
-
-        <!-- ............................................. -->
-
-        <div class="footer-detail">
-          <div class="middle">
-            <h3>Contact us</h3>
-            <ul>
-              <li>Email:kareraolivier@gmail.com</li>
-              <li>Tel:+250788888443</li>
-              <li>Phone:+25073000777</li>
-            </ul>
-            <h3>E-mail us</h3>
+          <div class="subscribe">
             <form method="post">
-              <input
-                type="text"
-                placeholder="E-mail....."
-                id="user_email"
-                required
-                pattern=".*.com"
-              />
-              <input
-                type="text"
-                placeholder="Message....."
-                class="Message"
-                id="user_emailMessage"
-                required
-              />
-              <button class="button" id="Button">send</button>
+              <input type="text" placeholder="Subscribe....." required id="subInput" />
+              <button class="button" id="subButton">Subscribe</button>
             </form>
           </div>
         </div>
-        <!-- ......................................................... -->
-
-        <div class="footer-detail">
-          <div class="last">
-            <h3>Location</h3>
-            <ul>
-              <li>P.O.BOX:120Bd</li>
-              <li>209.34.12.780</li>
-              <li>Nyarugenge/gitega</li>
-            </ul>
-            <div class="last-location">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3302.3399210640373!2d30.04158451415958!3d-1.978165198557856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2srw!4v1644408492680!5m2!1sen!2srw"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                class="image"
-              ></iframe>
-            </div>
-            <div class="subscribe">
-              <form method="post">
-                <input type="text" placeholder="Subscribe....." required />
-                <button class="button">Subscribe</button>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
-      <h3 style="text-align: center; height: 3px">karera.co.ltd copyright</h3>
-    </section>
+    </div>
+    <h3 style="text-align: center; height: 3px">karera.co.ltd copyright</h3>
 
-    <!-- ..................latest..................... -->
+  </section>
 
-    <!-- ................firebase.................... -->
+  <!-- ..................latest..................... -->
 
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
-    <script defer src="/dashboard/js/configuration.js"></script>
-    <script defer src="/dashboard/js/dashboard.js"></script>
-    <script defer src="/dashboard/js/email.js"></script>
-    <script defer src="/dashboard/js/login.js"></script>
-    <script defer src="/dashboard/js/editor.js"></script>
-    <script defer src="/js/index.js"></script>
-  </body>
+  <!-- ................firebase.................... -->
 
-  <script
-    src="https://kit.fontawesome.com/yourcode.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://kit.fontawesome.com/edf035d6ec.js"
-    crossorigin="anonymous"
-  ></script>
+
+
+  <script src="/dashboard/js/dashboard.js"></script>
+  <script src="/dashboard/js/createEmails.js"></script>
+  <script src="/dashboard/js/createSub.js"></script>
+  <script src="/dashboard/js/singleBlog.js"></script>
+
+  <script src="/dashboard/js/login.js"></script>
+  <script src="/dashboard/js/editor.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+
+
+
 </html>

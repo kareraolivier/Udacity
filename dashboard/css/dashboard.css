@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+button:hover {
+  opacity: 0.8;
+}
 .user {
   padding: 20px 30px 0 30px;
   height: 4rem;
@@ -65,6 +68,7 @@
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 .getArticle .articleTitle {
   width: 100%;
@@ -74,7 +78,7 @@
   width: 100%;
   padding: 10px;
   height: 5rem;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 .getArticle .articleButton {
   color: white;
@@ -89,12 +93,53 @@
   cursor: pointer;
   float: right;
   margin: 4px;
-  padding: 5px 5px 5px 5px;
 }
 
 /* ............email....................... */
 .email {
   height: 33rem;
+  align-items: center;
+  position: relative;
+}
+
+.popup {
+  align-items: center;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, 50%);
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  width: 50%;
+  position: absolute;
+  z-index: 10000;
+  background-color: rgb(255, 255, 255);
+}
+/* .popup p {
+  color: aqua;
+} */
+.popup button {
+  align-items: right;
+  color: white;
+  background-color: rgba(15, 25, 111, 1);
+  height: 1.8rem;
+  width: 4rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 0;
+  padding-right: 0;
+  float: right;
+}
+.popup.Close {
+  background-color: rgb(255, 36, 36);
+}
+#hideTable {
+  z-index: -100;
 }
 .table {
   border-collapse: collapse;
@@ -118,10 +163,10 @@
   padding-bottom: 13px;
   text-align: left;
   overflow: hidden;
-  border: solid black;
 }
-.table tr:nth-child(even) {
-  background-color: hsl(216, 64%, 89%);
+#dsTable.table.tr:nth-child(even) {
+  background-color: hsl(217, 79%, 78%);
+  color: aqua;
 }
 .table td {
   padding-top: 11px;
@@ -130,7 +175,7 @@
   cursor: pointer;
   overflow: hidden;
   overflow-y: hidden;
-  border: solid black;
+  text-align: left;
 }
 .table .low .column1 {
   width: 20%;
@@ -140,5 +185,22 @@
 }
 .table .low .column3 {
   width: 50%;
-  border: solid black;
+}
+.table .lowShadow:hover {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.table td button {
+  color: white;
+  background-color: rgba(15, 25, 111, 1);
+  height: 1.8rem;
+  width: 4rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 0;
+  padding-right: 0;
 }
