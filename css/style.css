@@ -1,29 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-  /* overflow-x: hidden; */
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  /* overflow-x: hidden; */
+
   margin: 0rem;
   padding: 0;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  font-family: sans-serif;
+
 }
 
 * {
   box-sizing: inherit;
 }
+
 .header {
   height: 5rem;
   width: 100%;
   position: fixed;
 }
+
 .header-color {
   background-color: rgb(15, 25, 111);
   color: white;
@@ -31,6 +40,7 @@ body {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .header-color a {
   color: white;
 }
@@ -44,6 +54,7 @@ body {
   background-color: white;
   display: block;
 }
+
 /* ..............................header................................. */
 .menu {
   float: left;
@@ -53,10 +64,12 @@ body {
   font-family: sans-serif;
   font-weight: bold;
 }
+
 .menu a {
   text-emphasis: none;
   text-decoration: none;
 }
+
 .menu a:active {
   text-decoration: underline;
   /* font-size: 15px; */
@@ -71,6 +84,7 @@ body {
   background-color: white;
   display: block;
 }
+
 .tabs {
   float: right;
   margin-right: 20px;
@@ -87,6 +101,7 @@ body {
   cursor: pointer;
   display: none;
 }
+
 #check {
   display: none;
 }
@@ -94,50 +109,69 @@ body {
 /* ................home........................... */
 
 .home {
-  height: 40rem;
-  background-image: url(/image/home.png);
   background-repeat: no-repeat;
   background-size: 90rem;
   display: flex;
-  /* margin-top: 5rem; */
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .home-photo {
   margin-top: 5rem;
-  height: 30rem;
-  width: 45%;
+  height: 35rem;
+  width: 32%;
   float: left;
-  /* position: absolute; */
+
 }
+
 .image {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
+
 .home-detail {
   padding-top: 5rem;
   margin-top: 5rem;
   margin-right: 3.4rem;
   width: 45%;
 }
+
 .home-detail h2 {
-  margin-left: 7rem;
+
   color: rgba(15, 25, 111, 1);
 }
+
 .home-detail p {
   margin-left: 4rem;
   margin-top: 3rem;
-  color: white;
-  width: 30rem;
   font-size: 20;
 }
+
+.button {
+  border: none;
+  margin-left: 18rem;
+  color: white;
+  height: 3rem;
+  width: 8rem;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(15, 25, 111, 1);
+  /* margin-: 5px; */
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+
 
 /* ..................about......................... */
 
 .about {
   background-color: rgb(239, 240, 253);
   padding: 80px 40px;
-  /* height: 45rem; */
+
 }
 
 .about-container {
@@ -147,6 +181,7 @@ body {
   width: 100%;
   justify-content: center;
 }
+
 h2 {
   text-align: center;
   color: rgba(15, 25, 111, 1);
@@ -156,11 +191,13 @@ h2 {
 .about-details {
   height: 100%;
   width: 40%;
-  font-size: 30px;
+  font-size: 25px;
   color: rgba(15, 25, 111, 1);
   text-align: center;
   justify-content: center;
+  padding: 0 10px 0 0;
 }
+
 .about-image {
   width: 40%;
   height: 30rem;
@@ -181,6 +218,7 @@ h2 {
   width: 100%;
   padding: 80px 0 5px 0;
 }
+
 .project-card {
   margin: 5rem;
   display: flex;
@@ -190,6 +228,7 @@ h2 {
 .project h2 {
   color: white;
 }
+
 .project-details {
   float: right;
   width: 50%;
@@ -204,6 +243,7 @@ h2 {
   width: 41%;
   height: 25rem;
 }
+
 /* .......................blog.............................. */
 .blog {
   padding: 80px 5px 0 5px;
@@ -212,10 +252,12 @@ h2 {
   font-size: 20;
   background-color: white;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .card {
   width: 280px;
   margin: 10px;
@@ -223,15 +265,19 @@ h2 {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .card p {
   width: 90%;
   margin: 1px;
   margin-bottom: 5px;
+  padding: 0 0 0 10px;
 }
+
 .card-img {
   width: 100%;
   height: 200px;
 }
+
 .card button {
   border: none;
   margin-left: 8rem;
@@ -244,6 +290,7 @@ h2 {
   margin-bottom: 5px;
   border-radius: 3px;
 }
+
 /* ........................................................ */
 
 .celtificate {
@@ -251,14 +298,17 @@ h2 {
   width: 100%;
   padding: 30px 0 80px 0;
 }
+
 .celtificate div {
   margin: 3rem;
   display: inline;
 }
+
 .celtificate div img {
   height: 3rem;
   width: 9rem;
 }
+
 /* ........................................... */
 
 /*......................tablete.......................*/
@@ -267,29 +317,38 @@ h2 {
   body {
     width: 100%;
   }
+
   .home {
     width: 100%;
     height: 100%;
     padding: 50px 20px 0px 0px;
     background-image: none;
-    background-color: rgba(15, 25, 111, 1);
     background-repeat: no-repeat;
     background-size: 90rem;
   }
+
   .home .home-detail {
     width: 50%;
     margin: 0;
     padding-left: 0;
     padding-right: 20px;
   }
+
   .home .home-detail p {
     width: 100%;
-    padding-right: 5ch;
+    margin: 0;
+    padding: 0 0 0 10px;
   }
+
+  .button {
+    margin-left: 8rem;
+  }
+
   .checkbtn {
     margin-top: 10px;
     display: block;
   }
+
   .tabs {
     position: absolute;
     z-index: 1;
@@ -298,44 +357,54 @@ h2 {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rgba(15, 25, 111, 1);
+
     top: 80px;
     left: -1000;
     transition: all -5s;
     text-align: center;
     color: white;
   }
+
   .menu a {
     text-emphasis: none;
     text-decoration: none;
     color: white;
   }
-  #check:checked ~ .tabs {
+
+  #check:checked~.tabs {
     left: 0;
   }
+
   .tabs.menu a {
     display: block;
     color: white;
   }
+
   .tabs.menu a:active {
     display: none;
     left: -1000;
   }
+
   .about-details {
     font-size: 20px;
   }
+
   .about-image {
     height: 350px;
   }
+
   .project {
     width: 100%;
   }
+
   .about {
     width: 100%;
   }
+
   .blog {
     margin: 0;
   }
+
   /* .blog.container {
   } */
 }
@@ -349,124 +418,151 @@ h2 {
     position: fixed;
     width: 100%;
     height: 80vh;
-    background: rgba(15, 25, 111, 1);
+
     top: 80px;
     left: -1000;
     transition: all -5s;
     text-align: center;
     color: white;
   }
+
   .home {
     height: 100%;
     padding: 40px 0px 10px 0px;
     flex-direction: column;
   }
+
   .home .home-photo {
     margin-top: 2rem;
     height: 15rem;
     width: 100%;
   }
+
   .home .home-detail {
     margin: 0;
     height: 17.5rem;
     width: 100%;
   }
+
   .home .home-detail p {
     padding: 1px 0 1px 2px;
     width: 100%;
     margin-top: 2px;
-    color: white;
+
     font-size: 16px;
-    text-align: center;
+
   }
+
   .home .home-detail h2 {
     margin-top: -4rem;
-    color: #ffffff;
+
     text-align: center;
     font-size: 20px;
     text-transform: capitalize;
   }
+
   .home-detail h2 span {
     display: block;
     text-align: center;
   }
+
   .project-card {
     flex-direction: column;
   }
+
   .about {
     padding: 50px 20px;
   }
+
   .about h2 {
     margin-bottom: 50px;
   }
+
   .about-container {
     flex-direction: column-reverse;
   }
+
   .about-container .about-image {
     margin: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
+
   .about-container .about-image img {
     margin: 0px;
     width: 100%;
     object-fit: cover;
   }
+
   .about-details {
     width: 100%;
     border-style: none;
   }
+
   .about-details p {
     text-align: left;
   }
+
   .project {
     padding: 30px 0px;
   }
+
   .project-card {
     margin: 0px;
     padding: 30px 20px;
     display: flex;
     flex-wrap: wrap;
   }
+
   .project-image {
     width: 100%;
   }
+
   .project-details {
     width: 100%;
     margin-top: 30px;
   }
+
   .blog {
     padding: 5px 20px;
     width: 100%;
   }
+
   .blog p {
     text-align: left;
     padding: 10px 10px 2px 10px;
   }
+
   .blog h3 {
     text-align: left;
     padding: 10px 10px 2px 10px;
   }
+
   .card {
     width: 100%;
     margin: 10px 0px;
   }
+
   .card-img {
     width: 100%;
   }
+
   .card-img,
   img {
     width: 100%;
     height: 50%;
     object-fit: cover;
   }
+
   .celtificate div {
     display: block;
   }
+
   .celtificate {
     height: 40rem;
   }
 }
+
 .active {
   text-decoration: underline;
 }
