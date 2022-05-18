@@ -97,19 +97,6 @@
   margin: 20px;
 }
 
-.subscribe {
-  margin: 5px;
-}
-
-.subscribe input {
-  border: none;
-  background: white;
-  margin: 0;
-  padding: 7px 8px;
-  font-size: 14px;
-  color: inherit;
-  border-radius: 5px;
-}
 
 .last button {
   border: none;
